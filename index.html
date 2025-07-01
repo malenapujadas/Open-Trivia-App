@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Trivia</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/logo.png" type="image">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="icons/logo.png" alt="Logo Open Trivia App" width="60" height="60">
+                </a>
+
+                <button class="navbar-toggler menuHamburguesa" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link btn" href="index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>  
+        <h1>🎉 Welcome to the <b>Ultimate Trivia Challenge</b>! 🧠</h1>
+        <section class="intro">
+            <p>Think you know it all? Let's put that brain to the test!</p>
+            <p>This app is all about trivia questions — fun, fast, and brain-boosting questions on a ton of different topics. Whether you're into movies, science, history, or random weird facts, we've got something for you.
+            You'll face 3 levels of difficulty: <b>Easy, Medium</b> and <b>Hard</b></p>
+            <p>
+                Each level has 10 multiple-choice questions, and only one right answer. Sounds simple? Just wait 'til the hard ones hit you 😅
+                So what are you waiting for?
+            </p>
+            <p>Get started, climb the ranks, and prove you're the real trivia master.
+            Good luck - and don't forget to have fun! 🎮</p>
+            <div class="acciones-app">
+                <div id="instalar-container" class="text-center mt-4">
+                    <a id="instalarApp" class="botonInstalar d-none">📲 Install App</a>
+                </div>
+                <div class="text-center mt-4">
+                    <a class="botonCompartir btnShare">📤 Share this game</a>
+                </div>
+                <div class="text-center mt-4">
+                    <a class="botonNotificaciones btnNotif">🔔 Enable Notifications</a>
+                </div>
+            </div>
+            
+        </section>
+        <section class="selector-categoria text-center mt-5">
+        <h2 class="mb-3">🎯 Choose your category</h2>
+        <select id="categoria" class="form-select categoria-select mx-auto">
+            <option value="">Any Category</option>
+            <option value="9">🧠 General Knowledge</option>
+            <option value="11">🎬 Movies</option>
+            <option value="17">🔬 Science</option>
+            <option value="21">🏅 Sports</option>
+            <option value="23">📜 History</option>
+        </select>
+    </section>
+        <section id="niveles" class="d-flex f-row justify-content-around">
+            <button class="btn" data-dificultad="easy" id="nivel1">
+                <h3>Easy</h3>
+                <p>1</p>
+            </button>
+            <button class="btn" data-dificultad="medium" id="nivel2">
+                <h3>Medium</h3>
+                <p>2</p>
+            </button>
+            <button class="btn" data-dificultad="hard" id="nivel3"> 
+                <h3>Hard</h3>
+                <p>3</p>
+            </button>
+        </section>
+    </main>
+    <footer>
+        <p>Open Trivia App - © Copyright 2025. </p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+</body>
+</html>

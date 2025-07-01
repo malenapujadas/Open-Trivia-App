@@ -1,0 +1,317 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+header{
+    border-bottom: 1px solid rgb(171, 22, 216);
+    margin-bottom: 100px;
+}
+.menuHamburguesa{
+    background-color: white;
+    border: none;
+}
+nav ul li a{
+    height: 30px !important;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+nav ul li{
+    text-align: center;
+    margin: 0 auto;
+}
+h1{
+    color: rgb(73, 12, 129);  
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+}
+h2{
+    color: #fbb80f;  
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.intro{
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    padding-top: 50px;
+}
+
+/* BOTONES CON ACCIONES */
+.botonInstalar{
+    padding: 15px;
+    background-color: #7f4aa4;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.botonCompartir{
+    padding: 15px;
+    background-color: #fbb80f;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.botonNotificaciones{
+    padding: 15px;
+    border: 1px solid  #0f85fb;
+    color:  #0f85fb;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.botonInstalar:hover {
+    background-color: #663b94;
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.botonCompartir:hover {
+    background-color: #d49f00;
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.botonNotificaciones:hover {
+    background-color: #0f85fb;
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Contenedor de acciones */
+.acciones-app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 30px;
+}
+
+
+.acciones-app > div {
+    flex: 1 1 200px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.botonInstalar,
+.botonCompartir,
+.botonNotificaciones {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+/* SECCION ELEGIR CATEGORIA */
+.selector-categoria {
+    width: 100%;
+}
+
+.selector-categoria h2 {
+    font-size: 26px;
+    color: #3c0b5f;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.categoria-select {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 2px solid #7f4aa4;
+    font-size: 16px;
+    color: #3c0b5f;
+    background-color: #f5f5f5;
+    transition: all 0.3s ease-in-out;
+}
+
+.categoria-select:focus {
+    outline: none;
+    border-color: #fbb80f;
+    box-shadow: 0 0 5px rgba(251, 184, 15, 0.5);
+}
+
+/* BOTONES DE NIVELES*/
+#niveles{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+#nivel1{
+    background-color: #fbb80f;
+    border: 2px solid  #987b04;
+}
+#nivel2{
+    background-color: #7f4aa4;
+    border: 2px solid #3c0b5f;
+}
+#nivel3{
+    background-color: #ff914d;
+    border: 2px solid #be4e08;
+}
+#nivel1 h3, #nivel1 p{
+    color:  #987b04;
+}
+#nivel2 h3, #nivel2 p{
+    color: #3c0b5f;
+}
+#nivel3 h3, #nivel3 p{
+    color: #be4e08;
+}
+
+
+
+#niveles .btn{
+    height: 300px;
+    width: 30%;
+    border-radius: 20px;
+}
+.btn h3{
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btn p{
+    font-size: 80px;
+    text-align: center;
+}
+#niveles .btn {
+    height: 300px;
+    width: 30%;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+/* Efecto hover general */
+#niveles .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    height: 60px;
+    text-align: center;
+    border-top: 2px solid rgb(171, 22, 216) ;
+    margin-top: 100px;
+    padding-top: 20px;
+}
+
+
+
+/* *********** */
+/* CARDS DE PREGUNTAS */
+
+.card{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 2px solid #fbb80f;
+}
+
+.divFinalizar{
+    text-align: center;
+}
+
+.finalizar{
+    background-color: #3c0b5f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+/* MODO OFFLINE */
+.offline-mode {
+    background-color: #f0f0f5;
+    color: #333;
+}
+
+.offline-mode header,
+.offline-mode footer {
+    background-color: white;
+    color: inherit;
+}
+
+/* Estilo para el fondo de main y secciones */
+.offline-mode main,
+.offline-mode section,
+.offline-mode .card {
+    background-color: #f5f5fa;
+    color: #333;
+}
+
+/* Botones en modo offline */
+.offline-mode .btn {
+    background-color: #ddd !important;
+    color: #3c0b5f !important;
+    border-color: #bbb !important;
+}
+
+/* Logo redondo con fondo blanco */
+.navbar-brand img {
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+
+/* Botón hamburguesa con fondo neutro */
+.menuHamburguesa {
+    background-color: transparent;
+    border: none;
+}
+
+
+/* MEDIDAS PARA PANTALLAS CHICAS */
+@media screen and (max-width: 768px){
+    #niveles{
+        flex-direction: column;
+        margin: 0 auto;
+        
+    }
+    #niveles .btn{
+        margin-bottom: 30px;
+        width: 300px;
+    }
+    .categoria-select {
+        width: 80%;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 615px){
+    .container-fluid{
+    flex-wrap: nowrap !important;
+}
+}
+
